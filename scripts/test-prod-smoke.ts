@@ -4,7 +4,7 @@ import path from 'path'
 
 const PROD_URL = process.env.TEST_TARGET_URL || 'https://gro-kan-1040062317673.europe-west3.run.app'
 const ARTIFACTS_DIR = 'C:\\Users\\42195\\.gemini\\antigravity-ide\\brain\\d05b7caf-4cc5-40e2-a1ba-ac86f6a5002c'
-const APP_PIN = process.env.APP_PIN ?? '888888'
+const APP_PIN = process.env.APP_PIN ?? '666666'
 
 interface SmokeReport {
   apiChecks: { name: string; passed: boolean; details?: string }[]
