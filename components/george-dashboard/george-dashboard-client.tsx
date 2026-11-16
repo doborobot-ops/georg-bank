@@ -193,7 +193,7 @@ export function GeorgeDashboardClient({
 }) {
   const { data: sessionData } = useSession()
   const user = {
-    name: sessionData?.user?.name ?? 'Business účet L',
+    name: sessionData?.user?.name ?? 'Marek Adam',
     email: sessionData?.user?.email ?? 'larsenevans89@gmail.com',
     image: sessionData?.user?.image || '/images/profile-avatar.png',
   }
@@ -3200,7 +3200,7 @@ export function GeorgeDashboardClient({
                   <div className="w-16 h-16 rounded-full overflow-hidden mx-auto mb-3 shadow-md">
                     <img src="/images/profile-avatar.png" alt="Avatar" className="w-full h-full object-cover" />
                   </div>
-                  <h4 className="text-base font-bold text-white">{user.name || 'Business účet L'}</h4>
+                  <h4 className="text-base font-bold text-white">{user.name || 'Marek Adam'}</h4>
                   <p className="text-xs text-[#7f8596] mt-1">{BUSINESS_ACCOUNT_LABEL}</p>
                   <div className="mt-4 pt-4 border-t border-slate-800 space-y-2.5 text-left text-xs">
                     <div className="flex justify-between"><span className="text-[#7f8596]">George Kľúč:</span> <span className="text-emerald-400 font-bold">Aktívny</span></div>

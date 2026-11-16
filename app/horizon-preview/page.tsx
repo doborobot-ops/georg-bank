@@ -15,12 +15,12 @@ export default function HorizonPreviewPage() {
       id: 'acc-preview',
       userId: 'user-preview',
       accountNumber: 'SK31 0900 0000 0050 1234 5678',
-      displayName: 'Business účet L',
+      displayName: 'Marek Adam',
       currency: 'EUR',
       balanceEur: 8850.0,
     },
     isSuperadmin: true,
-    displayName: 'Business účet L',
+    displayName: 'Marek Adam',
     transactions: [
       {
         id: 'tx-1',

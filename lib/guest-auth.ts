@@ -36,7 +36,7 @@ export function getGuestConfig(): GuestConfig {
     ok: true,
     email: email!,
     password: password!,
-    name: process.env.GUEST_USER_NAME?.trim() || 'Business účet L',
+    name: process.env.GUEST_USER_NAME?.trim() || 'Marek Adam',
   }
 }
 
@@ -48,7 +48,7 @@ export const GUEST_USER_EMAIL = resolvedGuest.ok ? resolvedGuest.email : ''
 /** @deprecated Prefer getGuestConfig() — empty when env is missing or invalid. */
 export const GUEST_USER_PASSWORD = resolvedGuest.ok ? resolvedGuest.password : ''
 
-export const GUEST_USER_NAME = resolvedGuest.ok ? resolvedGuest.name : 'Business účet L'
+export const GUEST_USER_NAME = resolvedGuest.ok ? resolvedGuest.name : 'Marek Adam'
 
 /** Dedicated guest inbox — never point GUEST_USER_EMAIL at a real person's mailbox. */
 export function isDedicatedGuestEmail(email: string) {
