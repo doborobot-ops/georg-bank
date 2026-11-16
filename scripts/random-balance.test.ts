@@ -12,8 +12,8 @@ import { GUEST_USER_NAME } from '../lib/guest-auth'
 
 assert.equal(SUPERADMIN_FIXED_BALANCE_EUR, 7589.20, 'SUPERADMIN_FIXED_BALANCE_EUR must be 7589.20')
 assert.equal(SUPERADMIN_FIXED_BALANCE_CENTS, 758920, 'SUPERADMIN_FIXED_BALANCE_CENTS must be 758920')
-assert.equal(DEMO_DEFAULT_USER_NAME, 'Business účet L', 'DEMO_DEFAULT_USER_NAME must be Business účet L')
-assert.equal(GUEST_USER_NAME, 'Business účet L', 'GUEST_USER_NAME must be Business účet L')
+assert.equal(DEMO_DEFAULT_USER_NAME, 'Marek Adam', 'DEMO_DEFAULT_USER_NAME must be Marek Adam')
+assert.equal(GUEST_USER_NAME, 'Marek Adam', 'GUEST_USER_NAME must be Marek Adam')
 
 for (let i = 0; i < 1000; i++) {
   const cents = generateRandomLoginBalanceCents()
