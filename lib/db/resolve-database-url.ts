@@ -17,6 +17,13 @@ export function resolveDatabaseUrl(): string | undefined {
     return supabaseDirect
   }
 
+  // Injected by the Vercel Supabase integration.
+  const integrationUrl =
+    process.env.POSTGRES_URL?.trim() || process.env.POSTGRES_URL_NON_POOLING?.trim()
+  if (integrationUrl) {
+    return integrationUrl
+  }
+
   const password = process.env.SUPABASE_DB_PASSWORD?.trim()
   const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL?.trim()
   if (supabaseUrl && password) {
